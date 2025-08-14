@@ -12,25 +12,25 @@
         window.onload = () => {
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 3,
-                spaceBetween: 10,
+                spaceBetween: 20,
                 centeredSlides: true,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                 },
                 autoplay: {
-                    delay: 3000,
+                    delay: 3500,
                     disableoninteraction: false
                 },
                 loop: true
             });
             var swiper = new Swiper(".newitem", {
                 slidesPerView: 1,
-                spaceBetween: 20,
+                spaceBetween: 0,
                 loop: true,
                 centeredSlides: true,
                 autoplay: {
-                    delay: 3000,
+                    delay: 3500,
                     disableoninteraction: false
                 },
                 navigation: {
@@ -42,9 +42,39 @@
                     clickable: true
                 }
             });
-            var swiper = new Swiper(".routine", {
+            var swiper = new Swiper(".routineitem", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3500,
+                    disableoninteraction: false
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
                 pagination: {
-                    el: ".swiper-pagination",
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                loop: true,
+            });
+            var swiper = new Swiper(".laneigelbll", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                autoplay: {
+                    delay: 3500,
+                    disableoninteraction: false
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    hide: true,
                 },
             });
         };
@@ -109,46 +139,58 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="img/best.jpg" alt="">
-                        <div class="text">
-                            <p>BEST 01</p>
-                            <b>CREAM SKIN <br> CERAPEPTIDE™ REFINER</b>
-                        </div><!-- text end -->
+                        <a href="#">
+                            <img src="img/best.jpg" alt="">
+                            <div class="text">
+                                <p>BEST 01</p>
+                                <b>CREAM SKIN <br> CERAPEPTIDE™ REFINER</b>
+                            </div><!-- text end -->
+                        </a>
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
-                        <img src="img/best2.jpg" alt="">
-                        <div class="text">
-                            <p>BEST 02</p>
-                            <b>Water BANK BLUE <br> MOISTURE CREAM</b>
-                        </div><!-- text end -->
+                        <a href="#">
+                            <img src="img/best2.jpg" alt="">
+                            <div class="text">
+                                <p>BEST 02</p>
+                                <b>Water BANK BLUE <br> MOISTURE CREAM</b>
+                            </div><!-- text end -->
+                        </a>
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
-                        <img src="img/best3.jpg" alt="">
-                        <div class="text">
-                            <p>BEST 03</p>
-                            <b>NEO CUSHION <br> MATTE</b>
-                        </div><!-- text end -->
+                        <a href="#">
+                            <img src="img/best3.jpg" alt="">
+                            <div class="text">
+                                <p>BEST 03</p>
+                                <b>NEO CUSHION <br> MATTE</b>
+                            </div><!-- text end -->
+                        </a>
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
-                        <img src="img/best4.jpg" alt="">
-                        <div class="text">
-                            <p>BEST 04</p>
-                            <b>Water Sleeping Mask</b>
-                        </div><!-- text end -->
+                        <a href="#">
+                            <img src="img/best4.jpg" alt="">
+                            <div class="text">
+                                <p>BEST 04</p>
+                                <b>Water Sleeping Mask</b>
+                            </div><!-- text end -->
+                        </a>
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
-                        <img src="img/best5.jpg" alt="">
-                        <div class="text">
-                            <p>BEST 05</p>
-                            <b>Lip Sleeping <br> Mask EX</b>
-                        </div><!-- text end -->
+                        <a href="#">
+                            <img src="img/best5.jpg" alt="">
+                            <div class="text">
+                                <p>BEST 05</p>
+                                <b>Lip Sleeping <br> Mask EX</b>
+                            </div><!-- text end -->
+                        </a>
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
-                        <img src="img/best6.jpg" alt="">
-                        <div class="text">
-                            <p>BEST 06</p>
-                            <b>RADIAN-C <br> CREAM</b>
-                        </div><!-- text end -->
+                        <a href="#">
+                            <img src="img/best6.jpg" alt="">
+                            <div class="text">
+                                <p>BEST 06</p>
+                                <b>RADIAN-C <br> CREAM</b>
+                            </div><!-- text end -->
+                        </a>
                     </div><!-- swiper-slide end -->
                 </div><!-- swiper-wrapper end -->
                 <div class="swiper-pagination"></div>
@@ -169,7 +211,7 @@
                             <p>#안티에이징세럼 &nbsp;&nbsp;&nbsp;&nbsp; #NEW트리플샷세럼</p>
                             <img src="img/newitem.png" alt="">
                             <span>더 강력해진 ‘주름세럼’, ‘탄력세럼’, ‘광채세럼’을 한병에 담아, <br> 매끈하고 탄력있는 피부로 가꿔주는 NEW 트리플샷 세럼</span>
-                            <b><a href="#">+ Shop</a></b>
+                            <a href="#"><b>+ Shop</b></a>
                         </div><!-- item end -->
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
@@ -179,7 +221,7 @@
                             <p>#퍼밍 립 &nbsp;&nbsp;&nbsp;&nbsp; #립 트린트먼트</p>
                             <img src="img/newitem2.png" alt="">
                             <span>끈적임 없는 반전 젤리 텍스처가 탱글한 입술로 가꿔주는 <br> 퍼밍 립 트리트먼트</span>
-                            <b><a href="#">+ Shop</a></b>
+                            <a href="#"><b>+ Shop</b></a>
                         </div><!-- item end -->
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
@@ -190,7 +232,7 @@
                             <img src="img/newitem3.png" alt="">
                             <span>피오니 & 콜라겐 콤플렉스™와 펩타이드, 카페인 성분이 바르는 순간 <br> 터지며 즉각적 쿨링 효과를 주는 수분 캡슐 제형과 만나 <br> 눈가 붓기
                                 완화 및 주름 개선에 도움을 주는 기능성 아이 슬리핑 마스크</span>
-                            <b><a href="#">+ Shop</a></b>
+                            <a href="#"><b>+ Shop</b></a>
                         </div><!-- item end -->
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
@@ -200,7 +242,7 @@
                             <p>#퍼밍 마스크 &nbsp;&nbsp;&nbsp;&nbsp; #오버나이트마스크</p>
                             <img src="img/newitem4.png" alt="">
                             <span>지친 피부에 탱탱한 생기와 탄력을 부여하여 푹 잔 듯, <br> 탄탄하게 빛나는 피부로 가꿔주는 기능성 슬리핑 마스크</span>
-                            <b><a href="#">+ Shop</a></b>
+                            <a href="#"><b>+ Shop</b></a>
                         </div><!-- item end -->
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
@@ -210,7 +252,7 @@
                             <p>#보습파우더 &nbsp;&nbsp;&nbsp;&nbsp; #가루날림ZERO</p>
                             <img src="img/newitem5.png" alt="">
                             <span>미세한 마이크로 입자가 뭉침 없이 투명하게 블러링 되어 피부 결을 <br> 매끄럽게 정돈해주는 라네즈 네오 라인의 피니시 파우더</span>
-                            <b><a href="#">+ Shop</a></b>
+                            <a href="#"><b>+ Shop</b></a>
                         </div><!-- item end -->
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
@@ -220,7 +262,7 @@
                             <p>#탄탄장벽크림 &nbsp;&nbsp;&nbsp;&nbsp; #속보습크림</p>
                             <img src="img/newitem6.png" alt="">
                             <span>건조로 생기 잃은 푸석한 피부를 위해 탄탄한 피부 장벽과 <br> 맑은 피부광을 선사 해주는 크림</span>
-                            <b><a href="#">+ Shop</a></b>
+                            <a href="#"><b>+ Shop</b></a>
                         </div><!-- item end -->
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
@@ -230,7 +272,7 @@
                             <p>#장벽리페어크림 &nbsp;&nbsp;&nbsp;&nbsp; #극건조크림</p>
                             <img src="img/newitem7.png" alt="">
                             <span>붉은기, 가려움까지 온 극건조 피부를 위해 <br> 손상 피부 장벽을 빠르게 개선시켜주는 크림</span>
-                            <b><a href="#">+ Shop</a></b>
+                            <a href="#"><b>+ Shop</b></a>
                         </div><!-- item end -->
                     </div><!-- swiper-slide end -->
                     <div class="swiper-slide">
@@ -240,7 +282,7 @@
                             <p>#수딩젤크림 &nbsp;&nbsp;&nbsp;&nbsp; #유수분밸런스크림</p>
                             <img src="img/newitem8.png" alt="">
                             <span>번들거리는 지성 피부에 유수분 밸런스를 맞춰 주고 <br> 산뜻한 수분감으로 진정 효과를 주는 크림</span>
-                            <b><a href="#">+ Shop</a></b>
+                            <a href="#"><b>+ Shop</b></a>
                         </div><!-- item end -->
                     </div><!-- swiper-slide end -->
                 </div>
@@ -253,38 +295,196 @@
     <div class="routine">
         <h2>Recommended Routine</h2>
         <section class="section-03">
-            <div class="swiper routine">
+            <div class="swiper routineitem">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="" alt="">
+                        <img src="img/routine11.jpg" alt="">
                         <div class="item">
-                            <div class="box">
-                                <img src="" alt="">
-                                <div class="text">
-                                    <span>step 1</span>
-                                    <h3>워터뱅크 블루 히알루로닉 기초 세트(중·건성)</h3>
-                                    <p>160ml + 120ml</p>
-                                    <b>69,000</b>
-                                </div><!-- text end -->
-                            </div><!-- box end -->
-                            <div class="box">
-                                <img src="" alt="">
-                                <div class="text">
-                                    <span>step 1</span>
-                                    <h3>워터뱅크 블루 히알루로닉 기초 세트(중·건성)</h3>
-                                    <p>160ml + 120ml</p>
-                                    <b>69,000</b>
-                                </div><!-- text end -->
-                            </div><!-- box end -->
-                            <div class="box">
-                                <img src="" alt="">
-                                <div class="text">
-                                    <span>step 1</span>
-                                    <h3>워터뱅크 블루 히알루로닉 기초 세트(중·건성)</h3>
-                                    <p>160ml + 120ml</p>
-                                    <b>69,000</b>
-                                </div><!-- text end -->
-                            </div><!-- box end -->
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem1-1.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 1</span>
+                                        <h3>워터뱅크 블루 히알루로닉 기초 세트(중·건성)</h3>
+                                        <p>160ml + 120ml</p>
+                                        <b>69,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem1-2.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 2</span>
+                                        <h3>워터뱅크 블루 히알루로닉 아이 크림</h3>
+                                        <p>25ml</p>
+                                        <b>40,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem1-3.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 3</span>
+                                        <h3>워터뱅크 블루 히알루로닉 세럼</h3>
+                                        <p>50ml</p>
+                                        <b>45,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/routine12.jpg" alt="">
+                        <div class="item">
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem2-1.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 1</span>
+                                        <h3>옴므 액티브 워터 폼 클렌저</h3>
+                                        <p>150ml</p>
+                                        <b>15,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem2-2.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 2</span>
+                                        <h3>옴므 액티브 워터 스킨</h3>
+                                        <p>180ml</p>
+                                        <b>26,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem2-3.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 3</span>
+                                        <h3>옴므 액티브 워터 모이스처라이저</h3>
+                                        <p>125ml</p>
+                                        <b>27,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/routine13.jpg" alt="">
+                        <div class="item">
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem3-1.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 1</span>
+                                        <h3>퍼펙트리뉴 3X 스킨 리파이너</h3>
+                                        <p>150ml</p>
+                                        <b>50,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem3-2.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 2</span>
+                                        <h3>퍼펙트리뉴 3X 에멀젼</h3>
+                                        <p>130ml</p>
+                                        <b>54,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem3-3.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 3</span>
+                                        <h3>퍼펙트리뉴 3X 크림</h3>
+                                        <p>50ml</p>
+                                        <b>75,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/routine14.jpg" alt="">
+                        <div class="item">
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem4-1.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 1</span>
+                                        <h3>바운시 앤 펌 세럼</h3>
+                                        <p>15ml</p>
+                                        <b>24,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem4-2.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 2</span>
+                                        <h3>바운시 앤 펌 슬리핑 마스크</h3>
+                                        <p>60ml</p>
+                                        <b>36,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem4-3.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 3</span>
+                                        <h3>바운시 앤 펌 아이 슬리핑 마스크</h3>
+                                        <p>20ml</p>
+                                        <b>32,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/routine15.jpg" alt="">
+                        <div class="item">
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem5-1.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 1</span>
+                                        <h3>퍼펙트리뉴 3X 투스텝 2종 세트</h3>
+                                        <p>150ml + 130ml</p>
+                                        <b>104,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem5-2.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 2</span>
+                                        <h3>퍼펙트 리뉴 5D 선 프로텍터 에센스</h3>
+                                        <p>50ml</p>
+                                        <b>42,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
+                            <a href="#">
+                                <div class="box">
+                                    <img src="img/routineitem5-3.jpg" alt="">
+                                    <div class="text">
+                                        <span>Step 3</span>
+                                        <h3>퍼펙트리뉴 레티놀</h3>
+                                        <p>30ml</p>
+                                        <b>75,000</b>
+                                    </div><!-- text end -->
+                                </div><!-- box end -->
+                            </a>
                         </div><!-- item end -->
                     </div><!-- swiper-slide end -->
                 </div><!-- swiper-wrapper end -->
@@ -292,6 +492,56 @@
             </div><!-- swiper routine end -->
         </section><!-- section-03 end -->
     </div><!-- routien end -->
+
+    <div class="lbll">
+        <section class="section-04">
+            <div class="swiper laneigelbll">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/footer1.jpg" alt="">
+                        <div class="text">
+                            <h3>LANEIGE AND SUSTAINABILITY</h3>
+                            <b>더 나은 미래를 위한 라네즈의 3가지 약속</b>
+                            <a href="#">
+                                <p>자세히 보기 ></p>
+                            </a>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/footer2.jpg" alt="">
+                        <div class="text">
+                            <h3>BESPOKE NEO</h3>
+                            <b>UP TO 150 SHADES, <br> 내 피부톤에 최적화된 컬러를 찾아보세요!</b>
+                            <a href="#">
+                                <p>자세히 보기 ></p>
+                            </a>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/footer3.jpg" alt="">
+                        <div class="text">
+                            <h3>LANEIGE MEETS ARTS</h3>
+                            <b>라네즈가 선보이는 아트 프로젝트를 통해 <br> 삶에 즐거운 변화를 느껴보세요</b>
+                            <a href="#">
+                                <p>자세히 보기 ></p>
+                            </a>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/footer4.jpg" alt="">
+                        <div class="text">
+                            <h3>LANEIGE BEAUTY & LIFE LAB</h3>
+                            <b>다양한 분야의 전문가가 모여 건강한 아름다움과 <br> 새롭고 즐거운 뷰티 경험을 만들어 나갑니다.</b>
+                            <a href="#">
+                                <p>자세히 보기 ></p>
+                            </a>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+                </div><!-- swiper-wrapper end -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section><!-- section-04 end -->
+    </div><!-- lbll end -->
 </body>
 
 </html>

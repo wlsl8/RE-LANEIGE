@@ -38,6 +38,7 @@ a {
     height: 124px;
     margin: 0 auto;
     font-size: 20px;
+    color: #333333;
     justify-items: center;
 }
 
@@ -191,6 +192,7 @@ a {
     width: 1636px;
     height: 870px;
     margin-top: 30px;
+    margin-bottom: 250px;
 }
 
 .new .section-02 .swiper-slide {
@@ -257,7 +259,91 @@ a {
 .new .section-02 .swiper-pagination {
     position: absolute;
     bottom: 10px;
-    right: 325px;
+    right: 330px;
     left: auto;
     text-align: right;
 }
+
+
+
+.routine {
+    width: 1601px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.routine h2{
+    width: 100%;
+    font-size: 55px;
+    color: #82AAC9;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.routine .section-03{
+    width: 1601px;
+    height: 683px;
+    margin-top: 30px;
+}
+
+.routine .section-03 .swiper-slide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.routine .section-03 .swiper-slide img{
+    width: 1000px;
+    height: 683px;
+    margin-right: 30px;
+}
+.routine .section-03 .swiper-slide .item{
+    width: 571px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.routine .section-03 .swiper-slide .item .box{
+    height: 180px;
+    display: flex;
+    align-items: center;
+}
+.routine .section-03 .swiper-slide .item .box img{
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin-right: 20px;
+}
+.routine .section-03 .swiper-slide .item .box .text{
+    display: flex;
+    flex-direction: column;
+}
+.routine .section-03 .swiper-slide .item .box .text span{
+    font-size: 16px;
+    color: #8FB7D7;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.routine .section-03 .swiper-slide .item .box .text h3{
+    font-size: 19px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+.routine .section-03 .swiper-slide .item .box .text p{
+    font-size: 14px;
+    color: #b7b7b7;
+    margin-bottom: 30px;
+}
+.routine .section-03 .swiper-slide .item .box .text b{
+    font-size: 20px;
+    color: #333333;
+}
+.routine .section-03 .swiper-pagination {
+    position: static;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
