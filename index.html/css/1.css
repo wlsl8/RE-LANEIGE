@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    width: 1920px;
+    height: 45px;
+    background-color: #8FB7D7;
+    margin: 0 auto;
+    display: block;
+}
+
+.header .util {
+    display: flex;
+    gap: 30px;
+    color: white;
+    line-height: 45px;
+    font-size: 14px;
+    justify-content: end;
+    margin-right: 160px;
+}
+
+.nav {
+    width: 1920px;
+    height: 124px;
+    margin: 0 auto;
+    font-size: 20px;
+    justify-items: center;
+}
+
+.nav .gnb {
+    display: flex;
+    line-height: 124px;
+    align-items: center;
+}
+
+.nav .gnb img {
+    display: flex;
+}
+
+.nav .gnb li:nth-child(1),
+.nav .gnb li:nth-child(2) {
+    margin-right: 109px;
+}
+
+.nav .gnb li:nth-child(4) img {
+    width: 228px;
+    height: 57px;
+    margin: 0 72px;
+}
+
+.nav .gnb li:nth-child(5),
+.nav .gnb li:nth-child(6),
+.nav .gnb li:nth-child(7) {
+    margin-right: 58px;
+}
+
+.nav .gnb li:nth-child(8),
+.nav .gnb li:nth-child(9) {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+}
+
+.main {
+    width: 1775px;
+    height: 900px;
+    margin: 0 auto;
+    display: block;
+}
+
+.main img {
+    width: 1775px;
+    height: 900px;
+    object-fit: cover;
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .text {
+    color: white;
+    position: absolute;
+}
+
+.main .text h3 {
+    font-size: 100px;
+    top: 0;
+    left: 0;
+    transform: translate(15%, -420%);
+}
+
+.main .text h2 {
+    font-size: 130px;
+    top: 0;
+    left: 0;
+    transform: translate(50%, -330%);
+}
+
+
+.best {
+    margin-top: 201px;
+
+}
+
+.best h2 {
+    color: #82AAC9;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.best .section-01 {
+    margin-bottom: 250px;
+}
+
+.best .section-01 .swiper-slide {
+    width: 944px;
+    height: 301px;
+}
+
+.best .section-01 .swiper-slide {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.best .section-01 .swiper-slide-active {
+    opacity: 1;
+}
+
+.best .section-01 .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.best .section-01 .swiper-slide .text {
+    position: absolute;
+    left: 30px;
+    bottom: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.best .section-01 .swiper-slide .text p {
+    font-size: 20px;
+}
+
+.best .section-01 .swiper-slide .text b {
+    font-size: 40px;
+}
+
+.best .section-01 .swiper-pagination {
+    position: relative;
+    bottom: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.new {
+    width: 1636px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new h2 {
+    width: 100%;
+    font-size: 55px;
+    color: #82AAC9;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.new .section-02 {
+    width: 1636px;
+    height: 870px;
+    margin-top: 30px;
+}
+
+.new .section-02 .swiper-slide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.new .section-02 .swiper-slide img {
+    width: 820px;
+    height: 870px;
+    margin-right: 127px;
+}
+
+.new .section-02 .swiper-slide .item {
+    width: 589px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.new .section-02 .swiper-slide .item h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.new .section-02 .swiper-slide .item p {
+    font-size: 16px;
+    color: #828282;
+    margin-bottom: 20px;
+}
+
+.new .section-02 .swiper-slide .item img {
+    width: 470px;
+    height: 370px;
+    margin: 0 auto;
+    display: block;
+}
+
+.new .section-02 .swiper-slide .item span {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.new .section-02 .swiper-slide .item b {
+    width: 250px;
+    height: 70px;
+    padding: 15px 20px;
+    font-size: 25px;
+    color: #828282;
+    border: 1px solid #b7b7b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new .section-02 .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    right: 325px;
+    left: auto;
+    text-align: right;
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANEIGE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/1.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                centeredSlides: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableoninteraction: false
+                },
+                loop: true
+            });
+            var swiper = new Swiper(".newitem", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3000,
+                    disableoninteraction: false
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                }
+            });
+            var swiper = new Swiper(".routine", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <ul class="util">
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">주문조회</a></li>
+            <li><a href="#">회원혜택</a></li>
+            <li><a href="#"><img src="img/languageicon.png" alt=""></a></li>
+        </ul><!-- util end -->
+    </header><!-- header end -->
+
+    <nav class="nav">
+        <ul class="gnb">
+            <li><a href="#">BRAND</a></li>
+            <li><a href="#">BEST&NEW</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><img src="img/logo.png" alt=""></a></li>
+            <li><a href="#">SKINCARE</a></li>
+            <li><a href="#">MAKEUP</a></li>
+            <li><a href="#">REVLEW</a></li>
+            <li><a href="#"><img src="img/icon.png" alt=""></a></li>
+            <li><a href="#"><img src="img/heraticon.png" alt=""></a></li>
+            <li><a href="#"><img src="img/carticon.png" alt=""></a></li>
+        </ul><!-- gnb end -->
+    </nav><!-- nav end -->
+
+    <div class="main">
+        <img src="img/headerimg.jpg" alt="">
+        <div class="text">
+            <h3>OPEN TO</h3>
+            <h2>WONDER</h2>
+        </div>
+    </div><!-- main end -->
+
+
+    <div class="best">
+        <h2>BEST SELLER</h2>
+        <section class="youtube">
+            <div class="swiper youtube">
+                <div class="swiper-wrapper">
+                    <div class="inner">
+                        <div class="swiper-slide"><iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/4Wd5eI5xfog?si=eXM3kn7fT3u9DuZa&autoplay=1&mute=1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div><!-- inner end -->
+                    </div><!-- swiper-slide end -->
+                </div><!-- swiper-wrapper end -->
+            </div><!-- swiper mySwiper end -->
+        </section><!-- youtube end -->
+
+
+        <section class="section-01">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/best.jpg" alt="">
+                        <div class="text">
+                            <p>BEST 01</p>
+                            <b>CREAM SKIN <br> CERAPEPTIDE™ REFINER</b>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/best2.jpg" alt="">
+                        <div class="text">
+                            <p>BEST 02</p>
+                            <b>Water BANK BLUE <br> MOISTURE CREAM</b>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/best3.jpg" alt="">
+                        <div class="text">
+                            <p>BEST 03</p>
+                            <b>NEO CUSHION <br> MATTE</b>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/best4.jpg" alt="">
+                        <div class="text">
+                            <p>BEST 04</p>
+                            <b>Water Sleeping Mask</b>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/best5.jpg" alt="">
+                        <div class="text">
+                            <p>BEST 05</p>
+                            <b>Lip Sleeping <br> Mask EX</b>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/best6.jpg" alt="">
+                        <div class="text">
+                            <p>BEST 06</p>
+                            <b>RADIAN-C <br> CREAM</b>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+                </div><!-- swiper-wrapper end -->
+                <div class="swiper-pagination"></div>
+            </div><!-- swiper mySwiper end -->
+        </section><!-- section-01 end -->
+    </div><!-- best end -->
+
+
+    <div class="new">
+        <h2>NEW ARRIVALS</h2>
+        <section class="section-02">
+            <div class="swiper newitem">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/new.jpg" alt="">
+                        <div class="item">
+                            <h3>PERFECT RENEW 3X SIGNATURE <br> SERUM ADVANCED</h3>
+                            <p>#안티에이징세럼 &nbsp;&nbsp;&nbsp;&nbsp; #NEW트리플샷세럼</p>
+                            <img src="img/newitem.png" alt="">
+                            <span>더 강력해진 ‘주름세럼’, ‘탄력세럼’, ‘광채세럼’을 한병에 담아, <br> 매끈하고 탄력있는 피부로 가꿔주는 NEW 트리플샷 세럼</span>
+                            <b><a href="#">+ Shop</a></b>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/new2.jpg" alt="">
+                        <div class="item">
+                            <h3>BOUNCY & <br> FIRM LIP TREATMENT</h3>
+                            <p>#퍼밍 립 &nbsp;&nbsp;&nbsp;&nbsp; #립 트린트먼트</p>
+                            <img src="img/newitem2.png" alt="">
+                            <span>끈적임 없는 반전 젤리 텍스처가 탱글한 입술로 가꿔주는 <br> 퍼밍 립 트리트먼트</span>
+                            <b><a href="#">+ Shop</a></b>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/new3.jpg" alt="">
+                        <div class="item">
+                            <h3>BOUNCY & <br> FIRM EYE SLEEPING MASK</h3>
+                            <p>#즉각쿨링 &nbsp;&nbsp;&nbsp;&nbsp; #저자극마스크</p>
+                            <img src="img/newitem3.png" alt="">
+                            <span>피오니 & 콜라겐 콤플렉스™와 펩타이드, 카페인 성분이 바르는 순간 <br> 터지며 즉각적 쿨링 효과를 주는 수분 캡슐 제형과 만나 <br> 눈가 붓기
+                                완화 및 주름 개선에 도움을 주는 기능성 아이 슬리핑 마스크</span>
+                            <b><a href="#">+ Shop</a></b>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/new4.jpg" alt="">
+                        <div class="item">
+                            <h3>BOUNCY & <br> FIRM FACE SLEEPING MASK</h3>
+                            <p>#퍼밍 마스크 &nbsp;&nbsp;&nbsp;&nbsp; #오버나이트마스크</p>
+                            <img src="img/newitem4.png" alt="">
+                            <span>지친 피부에 탱탱한 생기와 탄력을 부여하여 푹 잔 듯, <br> 탄탄하게 빛나는 피부로 가꿔주는 기능성 슬리핑 마스크</span>
+                            <b><a href="#">+ Shop</a></b>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/new5.jpg" alt="">
+                        <div class="item">
+                            <h3>NEO ESSENTIAL <br> BLURRING FINISH POWDER</h3>
+                            <p>#보습파우더 &nbsp;&nbsp;&nbsp;&nbsp; #가루날림ZERO</p>
+                            <img src="img/newitem5.png" alt="">
+                            <span>미세한 마이크로 입자가 뭉침 없이 투명하게 블러링 되어 피부 결을 <br> 매끄럽게 정돈해주는 라네즈 네오 라인의 피니시 파우더</span>
+                            <b><a href="#">+ Shop</a></b>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/new6.jpg" alt="">
+                        <div class="item">
+                            <h3>WATER BANK BLUE <br> HYALURONIC MOISTURE CREAM</h3>
+                            <p>#탄탄장벽크림 &nbsp;&nbsp;&nbsp;&nbsp; #속보습크림</p>
+                            <img src="img/newitem6.png" alt="">
+                            <span>건조로 생기 잃은 푸석한 피부를 위해 탄탄한 피부 장벽과 <br> 맑은 피부광을 선사 해주는 크림</span>
+                            <b><a href="#">+ Shop</a></b>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/new7.jpg" alt="">
+                        <div class="item">
+                            <h3>WATER BANK BLUE <br> HYALURONIC INTENSIVE CREAM</h3>
+                            <p>#장벽리페어크림 &nbsp;&nbsp;&nbsp;&nbsp; #극건조크림</p>
+                            <img src="img/newitem7.png" alt="">
+                            <span>붉은기, 가려움까지 온 극건조 피부를 위해 <br> 손상 피부 장벽을 빠르게 개선시켜주는 크림</span>
+                            <b><a href="#">+ Shop</a></b>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                    <div class="swiper-slide">
+                        <img src="img/new8.jpg" alt="">
+                        <div class="item">
+                            <h3>WATER BANK BLUE <br> HYALURONIC GEL CREAM</h3>
+                            <p>#수딩젤크림 &nbsp;&nbsp;&nbsp;&nbsp; #유수분밸런스크림</p>
+                            <img src="img/newitem8.png" alt="">
+                            <span>번들거리는 지성 피부에 유수분 밸런스를 맞춰 주고 <br> 산뜻한 수분감으로 진정 효과를 주는 크림</span>
+                            <b><a href="#">+ Shop</a></b>
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section><!-- section-02 end -->
+    </div><!-- new end -->
+
+
+    <div class="routine">
+        <h2>Recommended Routine</h2>
+        <section class="section-03">
+            <div class="swiper routine">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="" alt="">
+                        <div class="item">
+                            <div class="box">
+                                <img src="" alt="">
+                                <div class="text">
+                                    <span>step 1</span>
+                                    <h3>워터뱅크 블루 히알루로닉 기초 세트(중·건성)</h3>
+                                    <p>160ml + 120ml</p>
+                                    <b>69,000</b>
+                                </div><!-- text end -->
+                            </div><!-- box end -->
+                            <div class="box">
+                                <img src="" alt="">
+                                <div class="text">
+                                    <span>step 1</span>
+                                    <h3>워터뱅크 블루 히알루로닉 기초 세트(중·건성)</h3>
+                                    <p>160ml + 120ml</p>
+                                    <b>69,000</b>
+                                </div><!-- text end -->
+                            </div><!-- box end -->
+                            <div class="box">
+                                <img src="" alt="">
+                                <div class="text">
+                                    <span>step 1</span>
+                                    <h3>워터뱅크 블루 히알루로닉 기초 세트(중·건성)</h3>
+                                    <p>160ml + 120ml</p>
+                                    <b>69,000</b>
+                                </div><!-- text end -->
+                            </div><!-- box end -->
+                        </div><!-- item end -->
+                    </div><!-- swiper-slide end -->
+                </div><!-- swiper-wrapper end -->
+                <div class="swiper-pagination"></div>
+            </div><!-- swiper routine end -->
+        </section><!-- section-03 end -->
+    </div><!-- routien end -->
+</body>
+
+</html>
